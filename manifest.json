@@ -8,6 +8,10 @@
   },
   "options_page": "html/options.html",
   "permissions": [
-    "storage"
-  ]
+    "storage",
+    "notifications"
+  ],
+  "icons": {
+    "32": "assets/icon_32.png"
+  }
 }

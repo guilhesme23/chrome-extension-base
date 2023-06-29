@@ -42,6 +42,10 @@ module.exports = {
           to: 'css'
         },
         {
+          from: 'assets',
+          to: 'assets'
+        },
+        {
           from: 'manifest.json',
           transform(content, path) {
             const manifest = JSON.parse(content)

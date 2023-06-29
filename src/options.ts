@@ -31,9 +31,21 @@ document.querySelector('button')?.addEventListener('click', async () => {
     username: username.value,
     apiKey: apiKey.value
   }
-  chrome.storage.sync.set({
+  await chrome.storage.sync.set({
     [CREDENTIALS_KEY]: credentials
   })
   console.log(credentials);
+  await chrome.notifications.create("", {
+    title: "Saved Credentials",
+    message: "Hello this is a notification",
+    type: "basic",
+    iconUrl: "/assets/icon_32.png",
+    requireInteraction: true,
+    buttons: [
+      {
+        title: 'Open Kimai'
+      }
+    ]
+  });
   await loadConfigs()
 })
