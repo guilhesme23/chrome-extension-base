@@ -1,0 +1,22 @@
+{
+  "name": "timetracker",
+  "version": "0.1.0",
+  "description": "Simple time tracker",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "dev": "webpack --watch"
+  },
+  "author": "Guilherme Marques",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.239",
+    "chrome-types": "^0.1.209",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

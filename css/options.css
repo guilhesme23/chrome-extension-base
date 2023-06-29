@@ -1,0 +1,28 @@
+body {
+  background-color: cornsilk;
+}
+
+.optionsForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.optionsForm label {
+  margin-bottom: .25em;
+  font-weight: bold;
+}
+
+.optionsForm input {
+  padding: .2em;
+  margin-bottom: .2em;
+}
+
+.savedOptions {
+  display: none
+}
+
+#save {
+  padding: .25em;
+  max-width: 5rem;
+}
